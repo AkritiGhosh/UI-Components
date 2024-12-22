@@ -1,7 +1,8 @@
 [
   {
     "heading": "Floating Label for Input",
-    "path": "floating_label_input",
+    "id": "floating_label_textfield",
+    "file": "src\\components\\form_elementsFloatingLabelInputField.jsx",
     "code": null,
     "article": null
   }
