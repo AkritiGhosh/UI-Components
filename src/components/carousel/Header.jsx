@@ -11,7 +11,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6"
+          className="size-6 hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
         >
           <path
             strokeLinecap="round"
@@ -19,7 +19,9 @@ const Header = () => {
             d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25"
           />
         </svg>
-        <p className="text-xl">Title goes here</p>
+        <p className="text-xl drop-shadow-[0_0_1px_#FFFFFF66]">
+          Title goes here
+        </p>
       </div>
       <div className="h-full inline-flex items-center gap-5">
         <svg
