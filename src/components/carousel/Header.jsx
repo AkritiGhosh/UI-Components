@@ -28,7 +28,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6  cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFFAA]"
+          className="size-6  cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
         >
           <path
             strokeLinecap="round"
@@ -42,7 +42,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFFAA]"
+          className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
         >
           <path
             strokeLinecap="round"
@@ -57,7 +57,7 @@ const Header = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFFAA]"
+            className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
           >
             <path
               strokeLinecap="round"
@@ -72,7 +72,7 @@ const Header = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFFAA]"
+            className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
           >
             <path
               strokeLinecap="round"
