@@ -18,7 +18,7 @@ const SlideShowLayout = () => {
   const [isDark, setIsDark] = useState(false);
 
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full h-screen relative flex flex-col">
       <Header isDark={isDark} setIsDark={setIsDark} />
       {pageData?.backId && (
         <span className="absolute cursor-pointer w-16 h-full top-0 left-0 flex items-center justify-start px-2 hover:bg-gradient-to-r from-slate-200 to-white group  transition-all duration-300">
