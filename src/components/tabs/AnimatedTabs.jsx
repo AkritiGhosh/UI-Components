@@ -13,7 +13,7 @@ const AnimatedTabs = () => {
           className={`w-20 border  shadow-[0_0_5px_2px] hover:shadow-[0_0_16px_4px] rounded-full hover:h-20 transition-all text-black font-bold dark:text-white ${
             activeTab == tab
               ? "border-sky-400 shadow-sky-400 hover:shadow-sky-500 h-20"
-              : "border-teal-400  shadow-teal-300 hover:shadow-teal-300 h-10"
+              : "border-focus-400  shadow-focus-300 hover:shadow-focus-300 h-10"
           }`}
         >
           {tab}
