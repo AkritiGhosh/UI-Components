@@ -18,7 +18,11 @@ const ImageToggleSwitch = () => {
           <span className="inline-block bg-indigo-900 w-[175px] h-[48px] bg-[url(/public/night.jpg)] bg-cover bg-[10px_-18px]"></span>
         </div>
       </div>
-      <h1 className={`block relative mt-5 text-3xl font-medium ${ toggle ? "text-sky-400":"text-blue-800"}`}>
+      <h1
+        className={`block relative mt-5 text-3xl font-medium ${
+          toggle ? "text-sky-400" : "text-blue-800"
+        }`}
+      >
         {toggle ? "Light mode" : "Night mode"}
       </h1>
     </div>

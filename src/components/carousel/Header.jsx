@@ -6,7 +6,7 @@ const Header = ({ isDark, setIsDark }) => {
   const { layoutId } = useParams();
   const data = jsonData.filter((item) => item?.id == layoutId)[0];
   return (
-    <div className="z-50 relative w-full h-16 bg-slate-800 flex justify-between px-16 text-slate-300">
+    <div className="z-50 relative w-full h-16 bg-app-800 flex justify-between px-16 text-app-300">
       <div className="h-full inline-flex items-center gap-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
