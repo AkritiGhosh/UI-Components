@@ -1,7 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import jsonData from "../../lib/data";
 
-const Header = () => {
-  const dark = true;
+const Header = ({ isDark, setIsDark }) => {
+  const { layoutId } = useParams();
+  const data = jsonData.filter((item) => item?.id == layoutId)[0];
   return (
     <div className="z-50 relative w-full h-16 bg-slate-800 flex justify-between px-16 text-slate-300">
       <div className="h-full inline-flex items-center gap-5">
@@ -20,7 +23,7 @@ const Header = () => {
           />
         </svg>
         <p className="text-xl drop-shadow-[0_0_1px_#FFFFFF66]">
-          Title goes here
+          {data?.heading}
         </p>
       </div>
       <div className="h-full inline-flex items-center gap-5">
@@ -52,8 +55,9 @@ const Header = () => {
             d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
           />
         </svg>
-        {dark ? (
+        {isDark ? (
           <svg
+            onClick={() => setIsDark(false)}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -69,6 +73,7 @@ const Header = () => {
           </svg>
         ) : (
           <svg
+            onClick={() => setIsDark(true)}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
