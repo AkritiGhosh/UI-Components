@@ -7,7 +7,10 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/component/:layoutId" Component={SlideShowLayout} />
+        <Route path="/component">
+          <Route index Component={SlideShowLayout} />
+          <Route path=":layoutId" Component={SlideShowLayout} />
+        </Route>
       </Routes>
     </HashRouter>
   );
