@@ -13,17 +13,25 @@ const SlideShowLayout = () => {
   const pageData = data.filter((item) => item?.id == layoutId)[0];
 
   const [isDark, setIsDark] = useState(false);
+  const handleBack = () => nav("/component/" + pageData?.backId);
+  const handleNext = () => nav("/component/" + pageData?.nextId);
 
   return (
     <div className="w-full h-screen relative flex flex-col">
       <Header isDark={isDark} setIsDark={setIsDark} />
       {pageData?.backId && (
-        <span className="absolute cursor-pointer w-16 h-full top-0 left-0 flex items-center justify-start px-2 hover:bg-gradient-to-r from-app-200 to-white group  transition-all duration-300">
+        <span
+          onClick={handleBack}
+          className="absolute cursor-pointer w-16 h-full top-0 left-0 flex items-center justify-start px-2 hover:bg-gradient-to-r from-app-200 to-white group  transition-all duration-300"
+        >
           <ArrowIcon />
         </span>
       )}
       {pageData?.nextId && (
-        <span className="absolute cursor-pointer w-16 h-full top-0 right-0 flex items-center justify-end px-2 hover:bg-gradient-to-r from-white to-app-200 group  transition-all duration-300">
+        <span
+          onClick={handleNext}
+          className="absolute cursor-pointer w-16 h-full top-0 right-0 flex items-center justify-end px-2 hover:bg-gradient-to-r from-white to-app-200 group  transition-all duration-300"
+        >
           <ArrowIcon left={false} />
         </span>
       )}
