@@ -13,17 +13,17 @@ const ImageToggleSwitch = () => {
             toggle ? "-translate-x-[3px]" : "-translate-x-[152px]"
           }`}
         >
-          <span className="inline-block bg-sky-400 w-[175px] h-[48px] bg-[url(/public/day.png)] bg-cover bg-[10px_-50px]"></span>
+          <span className="inline-block bg-sky-400 w-[175px] h-[48px] bg-[url(/day.png)] bg-cover bg-[10px_-50px]"></span>
           <span className="absolute inline-block bg-gray-100 w-[50px] h-[50px] rounded-full -ml-[25px]  -translate-y-px shadow-inner shadow-gray-700" />
-          <span className="inline-block bg-indigo-900 w-[175px] h-[48px] bg-[url(/public/night.jpg)] bg-cover bg-[10px_-18px]"></span>
+          <span className="inline-block bg-indigo-900 w-[175px] h-[48px] bg-[url(/night.jpg)] bg-cover bg-[10px_-18px]"></span>
         </div>
       </div>
       <h1
-        className={`block relative mt-5 text-3xl font-medium ${
+        className={`block relative mt-10 text-3xl font-black uppercase font-serif ${
           toggle ? "text-sky-400" : "text-blue-800"
         }`}
       >
-        {toggle ? "Light mode" : "Night mode"}
+        {toggle ? "Day" : "Night"}
       </h1>
     </div>
   );
