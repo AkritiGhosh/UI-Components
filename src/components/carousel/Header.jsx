@@ -13,7 +13,7 @@ const Header = ({ isDark, setIsDark }) => {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke="white"
           className="size-6 hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
         >
           <path
@@ -22,7 +22,7 @@ const Header = ({ isDark, setIsDark }) => {
             d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25"
           />
         </svg>
-        <p className="text-xl drop-shadow-[0_0_1px_#FFFFFF66]">
+        <p className="text-xl text-white drop-shadow-[0_0_1px_#FFFFFF66]">
           {data?.heading}
         </p>
       </div>
@@ -32,7 +32,7 @@ const Header = ({ isDark, setIsDark }) => {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke="white"
           className="size-6  cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
         >
           <path
@@ -46,7 +46,7 @@ const Header = ({ isDark, setIsDark }) => {
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="currentColor"
+          stroke="white"
           className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
         >
           <path
@@ -62,7 +62,7 @@ const Header = ({ isDark, setIsDark }) => {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="currentColor"
+            stroke="white"
             className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
           >
             <path
@@ -78,7 +78,7 @@ const Header = ({ isDark, setIsDark }) => {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
-            stroke="currentColor"
+            stroke="white"
             className="size-6 cursor-pointer hover:drop-shadow-[0_0_2px_#FFFFFF] drop-shadow-[0_0_1px_#FFFFFF88]"
           >
             <path
