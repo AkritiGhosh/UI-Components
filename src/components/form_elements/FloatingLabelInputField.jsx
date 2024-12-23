@@ -1,6 +1,6 @@
 import React from "react";
 
-const FLIDemo = () => {
+const FloatingLabelTextfield = () => {
   return (
     <section>
       <div className="w-full relative">
@@ -23,4 +23,4 @@ const FLIDemo = () => {
   );
 };
 
-export default FLIDemo;
+export default FloatingLabelTextfield;
