@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowIcon from "../components/carousel/arrowIcon";
 import Header from "../components/carousel/Header";
 import { useNavigate, useParams } from "react-router-dom";
@@ -8,7 +8,9 @@ const SlideShowLayout = () => {
   const { layoutId } = useParams();
   const nav = useNavigate();
 
-  if (!layoutId) nav(data[0]?.id);
+  useEffect(() => {
+    if (!layoutId) nav(data[0]?.id);
+  }, [data]);
 
   const pageData = data.filter((item) => item?.id == layoutId)[0];
 
