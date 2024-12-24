@@ -1,18 +1,17 @@
 import React, { useMemo, useRef, useState } from "react";
 
-const HeroSection = () => {
+const HeroSection = ({ scrollRef }) => {
   const [mousePosition, setMousePosition] = useState(0);
   const ref = useRef();
   const screenWidth = window?.innerWidth;
   const heading = "UI Components";
   const textWidth = useMemo(() => {
-    console.log(ref?.current?.clientWidth, screenWidth);
     return ref?.current?.clientWidth;
   }, [ref?.current]);
 
   return (
     <div
-      className="w-full h-full overflow-hidden flex flex-col justify-around"
+      className="w-full h-full overflow-hidden flex flex-col justify-evenly items-center"
       onMouseMove={(e) =>
         setMousePosition(
           e.clientX - e.currentTarget.getBoundingClientRect().left
@@ -31,18 +30,19 @@ const HeroSection = () => {
                   : (screenWidth - textWidth) / 2 - 20
                 : "-10px",
           }}
-          className="h-28 w-2 mt-6 absolute z-10 bg-clip-content bg-transparent border-r-2 border-app-900 "
+          className="h-28 w-2 mt-5 absolute z-10 bg-clip-content bg-transparent border-r-2 border-app-900 "
         />
         <span className="relative inline-block w-auto">
           <span
             ref={ref}
             style={{
-              textShadow: "0 0 2px #d8b4fe ",
+              textShadow: "0 0 2.5px #d8b4fe ",
             }}
-            className="absolute top-0 left-0 inline-block w-auto text-8xl leading-snug font-bold cursor-none"
+            className="absolute left-0 inline-block w-auto font-serif text-8xl leading-snug font-bold cursor-none"
           >
             {heading}
           </span>
+
           <span
             ref={ref}
             style={{
@@ -56,14 +56,23 @@ const HeroSection = () => {
                     : "0%"
                   : "-100%",
             }}
-            className="relative inline-block w-auto text-8xl leading-snug font-bold text-transparent bg-clip-text cursor-none bg-gradient-to-r from-focus-500 via-app-600 to-transparent from-0% via-50% to-50%"
+            className="relative inline-block w-auto font-serif text-8xl leading-snug font-bold text-transparent bg-clip-text cursor-none bg-gradient-to-r from-focus-500 via-app-600 to-transparent from-0% via-50% to-50%"
           >
             {heading}
           </span>
         </span>
       </div>
-
-      <button onClick={() => console.log("clicked")}>Click me</button>
+      <p className="text-xl text-app-200 text-center">
+        A compilation of dynamic and interactive UI elements, with effects and
+        animations using Tailwind CSS.
+      </p>
+      <button
+        onClick={() => scrollRef?.current?.scrollIntoView()}
+        type="button"
+        className="w-auto py-3 px-7 rounded-3xl font-mono uppercase text-focus-600 text-xl font-bold tracking-wider leading-normal shadow-[0_0_25px_2px] border border-focus-500 shadow-focus-600 hover:text-focus-300 hover:shadow-focus-300"
+      >
+        Click me
+      </button>
     </div>
   );
 };
