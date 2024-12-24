@@ -69,9 +69,23 @@ const HeroSection = ({ scrollRef }) => {
       <button
         onClick={() => scrollRef?.current?.scrollIntoView()}
         type="button"
-        className="w-auto py-3 px-7 rounded-3xl font-mono uppercase text-focus-600 text-xl font-bold tracking-wider leading-normal shadow-[0_0_25px_2px] border border-focus-500 shadow-focus-600 hover:text-focus-300 hover:shadow-focus-300"
+        className="relative w-[190px] py-3 px-7 rounded-3xl font-mono uppercase text-focus-600 text-xl font-bold tracking-wider leading-normal shadow-[0_0_25px_2px] border border-focus-500 shadow-focus-600 hover:text-focus-300 hover:shadow-focus-300 group transition-all duration-500 overflow-hidden flex items-center hover:w-[220px]"
       >
-        Click me
+        Scroll down
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="#5eead4"
+          className="size-6 ml-3 inline-block absolute -right-6 group-hover:right-5 delay-200"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25"
+          />
+        </svg>
       </button>
     </div>
   );
