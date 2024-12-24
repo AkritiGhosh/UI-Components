@@ -16,7 +16,7 @@ const Header = ({ isDark, setIsDark }) => {
   return (
     <>
       <div
-        className={`z-50 absolute w-screen h-screen top-[-100vh] left-0 bg-app-950 transition-all duration-500 ${
+        className={`z-50 absolute w-screen h-screen top-[-100vh] left-0 bg-app-900 ${
           startAnimation ? "slide-in" : ""
         }`}
         onAnimationEnd={() => {
@@ -27,7 +27,7 @@ const Header = ({ isDark, setIsDark }) => {
         }}
       />
       <div
-        className={`z-40 relative w-full h-16 bg-app-950 flex justify-between px-16 text-app-300 ${
+        className={`z-40 relative w-full h-16 bg-app-900 flex justify-between px-16 text-app-300 ${
           startAnimation ? "fade-out" : ""
         }`}
       >
