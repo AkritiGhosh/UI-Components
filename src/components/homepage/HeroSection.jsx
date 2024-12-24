@@ -51,8 +51,8 @@ const HeroSection = ({ scrollRef }) => {
                 mousePosition > (screenWidth - textWidth) / 2
                   ? mousePosition < screenWidth / 2 + textWidth / 2
                     ? -textWidth +
-                      (mousePosition - (screenWidth - textWidth) / 2) +
-                      5
+                      (mousePosition - (screenWidth - textWidth) / 2) -
+                      3
                     : "0%"
                   : "-100%",
             }}
