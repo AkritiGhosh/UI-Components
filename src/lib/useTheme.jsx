@@ -11,16 +11,9 @@ const useTheme = () => {
   });
 
   useEffect(() => {
-    // Apply the theme class to the body
     const body = document.body;
-
-    // Remove any existing theme classes
     body.classList.remove("light", "dark");
-
-    // Add the current theme class
     body.classList.add(theme);
-
-    // Persist the theme in localStorage
     localStorage.setItem("theme", theme);
   }, [theme]);
 
