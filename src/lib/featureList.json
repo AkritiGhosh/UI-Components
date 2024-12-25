@@ -13,7 +13,7 @@
         "heading": "Toggle switch with image background",
         "path": "image_switch",
         "imgSrc": null,
-        "tags": ["Javascript required"],
+        "tags": [{ "icon": "/js.svg", "data": "required" }],
         "description": null
       }
     ]
