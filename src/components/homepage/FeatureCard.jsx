@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const FeatureCard = ({feature}) => {
   return (
     <div className="w-full p-4 rounded-lg border border-white flex flex-col gap-2.5">
-      <h3 className="text-white">{feature?.heading}</h3>
+      <h3 className="text-white font-semibold text-xl">{feature?.heading}</h3>
       {feature?.imgSrc && (
         <img
           src={"/src/assets/demoCuts/" + feature.imgSrc}

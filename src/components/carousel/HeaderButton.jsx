@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeaderButton = ({ path, dataCheck = true, linkTo, ...props }) => {
   return dataCheck ? (
-    <Link to={linkTo} className="size-6">
+    <Link to={linkTo} className="size-6" target="_blank">
       <button
         type="button"
         className="size-6 cursor-pointer
