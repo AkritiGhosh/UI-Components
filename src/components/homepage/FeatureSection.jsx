@@ -17,7 +17,7 @@ const FeatureSection = () => {
       </h1>
       <div className="mt-5 px-5 md:px-[5%] container m-auto">
         {features?.map((featureGroup) => (
-          <div className="w-full">
+          <div className="w-full mb-12 relative">
             <h2 className="text-white my-2 font-mono text-xl uppercase ">
               {featureGroup?.heading}
             </h2>
