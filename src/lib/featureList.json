@@ -1,0 +1,17 @@
+[
+  {
+    "heading": "Form elements",
+    "content": [
+      {
+        "heading": "Floating Label for Input",
+        "path": "floating_label_textfield",
+        "imgSrc": ""
+      },
+      {
+        "heading": "Toggle switch with image background",
+        "path": "image_switch",
+        "imgSrc": ""
+      }
+    ]
+  }
+]
