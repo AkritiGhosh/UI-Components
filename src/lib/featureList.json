@@ -43,5 +43,43 @@
         "description": null
       }
     ]
+  },
+  {
+    "heading": "Text Mask",
+    "content": [
+      {
+        "heading": "Without background image",
+        "path": "maskText1",
+        "imgSrc": "gradient_border.png",
+        "tags": [],
+        "description": null
+      },
+      {
+        "heading": "With frosted(blurred) background",
+        "path": "maskText2",
+        "imgSrc": "gradient_border.png",
+        "tags": [],
+        "description": null
+      }
+    ]
+  },
+  {
+    "heading": "Text transitions",
+    "content": [
+      {
+        "heading": "Bouncing Characters",
+        "path": "animText1",
+        "imgSrc": "gradient_border.png",
+        "tags": [],
+        "description": null
+      },
+      {
+        "heading": "Pulsing Characters",
+        "path": "animText2",
+        "imgSrc": "gradient_border.png",
+        "tags": [],
+        "description": null
+      }
+    ]
   }
 ]
