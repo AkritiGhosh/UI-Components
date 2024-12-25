@@ -14,13 +14,12 @@ const SlideShowLayout = () => {
 
   const pageData = data.filter((item) => item?.id == layoutId)[0];
 
-  const [isDark, setIsDark] = useState(false);
   const handleBack = () => nav("/component/" + pageData?.backId);
   const handleNext = () => nav("/component/" + pageData?.nextId);
 
   return (
     <div className="w-full h-screen relative flex flex-col bg-white dark:bg-black">
-      <Header isDark={isDark} setIsDark={setIsDark} />
+      <Header/>
       {pageData?.backId && (
         <span
           onClick={handleBack}

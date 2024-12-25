@@ -7,10 +7,12 @@ import code from "../../assets/code.svg";
 import lightTheme from "../../assets/lightTheme.svg";
 import darkTheme from "../../assets/darkTheme.svg";
 import HeaderButton from "./HeaderButton";
+import useTheme from "../../lib/useTheme";
 
-const Header = ({ isDark, setIsDark }) => {
+const Header = () => {
   const nav = useNavigate();
   const { layoutId } = useParams();
+  const [theme, toggleTheme] = useTheme();
   const data = jsonData.filter((item) => item?.id == layoutId)[0];
   const [startAnimation, setStartAnimation] = useState(false);
   return (
@@ -48,10 +50,10 @@ const Header = ({ isDark, setIsDark }) => {
             linkTo={data?.code}
             path={code}
           />
-          {isDark ? (
-            <HeaderButton path={lightTheme} onClick={() => setIsDark(false)} />
+          {theme == "dark" ? (
+            <HeaderButton path={lightTheme} onClick={toggleTheme} />
           ) : (
-            <HeaderButton path={darkTheme} onClick={() => setIsDark(true)} />
+            <HeaderButton path={darkTheme} onClick={toggleTheme} />
           )}
         </div>
       </div>
