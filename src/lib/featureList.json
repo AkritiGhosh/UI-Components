@@ -5,12 +5,16 @@
       {
         "heading": "Floating Label for Input",
         "path": "floating_label_textfield",
-        "imgSrc": ""
+        "imgSrc": null,
+        "tags": [],
+        "description": "The label acts as the placeholder. When focused on the input, it drifts upwards to the top border."
       },
       {
         "heading": "Toggle switch with image background",
         "path": "image_switch",
-        "imgSrc": ""
+        "imgSrc": null,
+        "tags": ["Javascript required"],
+        "description": null
       }
     ]
   }
