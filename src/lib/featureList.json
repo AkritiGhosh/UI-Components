@@ -24,21 +24,21 @@
       {
         "heading": "Gradient border - Method 1",
         "path": "gradient_border1",
-        "imgSrc": null,
+        "imgSrc": "gradient_border.png",
         "tags": [],
         "description": null
       },
       {
         "heading": "Gradient border - Method 2",
         "path": "gradient_border2",
-        "imgSrc": null,
+        "imgSrc": "gradient_border.png",
         "tags": [],
         "description": null
       },
       {
         "heading": "Gradient border - Method 3",
         "path": "gradient_border3",
-        "imgSrc": null,
+        "imgSrc": "gradient_border.gif",
         "tags": [],
         "description": null
       }
