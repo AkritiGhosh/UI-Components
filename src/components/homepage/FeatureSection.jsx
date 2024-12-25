@@ -20,13 +20,13 @@ const FeatureSection = () => {
             <h2 className="text-white">{featureGroup?.heading}</h2>
             <div className="w-full flex gap-5">
               {featureGroup?.content?.map((feature) => (
-                <div className="w-1/3 p-4 rounded-lg border border-white flex flex-col gap-2">
+                <div className="w-1/3 p-4 rounded-lg border border-white flex flex-col gap-2.5">
                   <h3 className="text-white">{feature?.heading}</h3>
                   {feature?.imgSrc && (
                     <img
-                      src={feature.imgSrc}
-                      alt={feature?.heading + " working demo"}
-                      className="max-w-full h-auto"
+                      src={"/src/assets/demoCuts/" + feature.imgSrc}
+                      alt={feature.heading + " working demo"}
+                      className="max-w-full w-auto h-auto rounded object-contain object-center"
                     />
                   )}
                   {feature?.tags?.length > 0 ? (
@@ -34,7 +34,10 @@ const FeatureSection = () => {
                       {feature?.tags?.map((tag) => (
                         <span className="w-auto py-1 px-2 rounded border border-gray-700 text-sm font-normal text-focus-50 flex items-center gap-1">
                           {tag?.icon ? (
-                            <img src={tag.icon} className="size-4 object-cover" />
+                            <img
+                              src={tag.icon}
+                              className="size-4 object-cover"
+                            />
                           ) : null}
                           {tag?.data ?? tag}
                         </span>
@@ -57,7 +60,7 @@ const FeatureSection = () => {
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
-                          strokeWidth={1}
+                          strokeWidth={1.25}
                           stroke="currentColor"
                           className="size-4 group-hover:stroke-focus-500 group-hover:stroke-2"
                         >

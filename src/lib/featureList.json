@@ -5,7 +5,7 @@
       {
         "heading": "Floating Label for Input",
         "path": "floating_label_textfield",
-        "imgSrc": null,
+        "imgSrc": "floating_label.gif",
         "tags": [],
         "description": "The label acts as the placeholder. When focused on the input, it drifts upwards to the top border."
       },
