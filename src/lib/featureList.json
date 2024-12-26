@@ -69,14 +69,14 @@
       {
         "heading": "Bouncing Characters",
         "path": "animText1",
-        "imgSrc": "gradient_border.png",
+        "imgSrc": "animTxt1.gif",
         "tags": [],
         "description": null
       },
       {
         "heading": "Pulsing Characters",
         "path": "animText2",
-        "imgSrc": "gradient_border.png",
+        "imgSrc": "animTxt2.gif",
         "tags": [],
         "description": null
       }
