@@ -1,5 +1,5 @@
 #textImgBg {
-  background-image: url("../../../public/galaxy-background.jpg");
+  background-image: url("/galaxy-background.jpg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-size: 200%;
@@ -12,13 +12,13 @@
   left: 0;
   width: 100%;
   height: calc(100% - 40px);
-  background-image: url("../../../public/galaxy-background.jpg");
+  background-image: url("/galaxy-background.jpg");
   filter: blur(20px);
   background-size: cover;
 }
 
 #textImgBgAnimated {
-  background-image: url("../../../public/galaxy-background.jpg");
+  background-image: url("/galaxy-background.jpg");
   background-size: 100%;
   background-position: center;
   -webkit-text-fill-color: transparent;
