@@ -60,8 +60,8 @@ const data = [
     file: <BouncingCharacters />,
     code: null,
     article: null,
-    backId: "animText2",
-    nextId: "maskText2",
+    backId: "maskText2",
+    nextId: "animText2",
   },
 
   {
@@ -70,7 +70,7 @@ const data = [
     file: <TextWithImageBg />,
     code: null,
     article: null,
-    backId: "gradient_border2",
+    backId: "gradient_border3",
     nextId: "maskText2",
   },
 
