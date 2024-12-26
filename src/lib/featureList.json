@@ -50,14 +50,14 @@
       {
         "heading": "Without background image",
         "path": "maskText1",
-        "imgSrc": "gradient_border.png",
+        "imgSrc": "mask1.png",
         "tags": [],
         "description": null
       },
       {
         "heading": "With frosted(blurred) background",
         "path": "maskText2",
-        "imgSrc": "gradient_border.png",
+        "imgSrc": "mask2.png",
         "tags": [],
         "description": null
       }
