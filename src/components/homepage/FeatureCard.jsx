@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FeatureCard = ({feature}) => {
   return (
-    <div className="w-full p-4 rounded-lg border border-white flex flex-col gap-2.5">
+    <div className="w-full p-4 rounded-lg shadow-app-300 shadow-[0_0_5px_0] flex flex-col gap-2.5">
       <h3 className="text-white font-semibold text-xl">{feature?.heading}</h3>
       {feature?.imgSrc && (
         <img
