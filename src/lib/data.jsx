@@ -3,7 +3,6 @@ import GradientBorder2 from "../components/buttons/colorful_border/GradientBorde
 import GradientBorder3 from "../components/buttons/colorful_border/GradientBorder3";
 import FloatingLabelTextfield from "../components/form_elements/FloatingLabelInputField";
 import ImageToggleSwitch from "../components/form_elements/ImageSwitch";
-import AnimatedTabs from "../components/tabs/AnimatedTabs";
 import BouncingCharacters from "../components/textBgImage/BouncingText";
 import TextWithImageBg from "../components/textBgImage/Demo";
 import PulsingText from "../components/textBgImage/PulsingText";
@@ -92,15 +91,6 @@ const data = [
     article: null,
     backId: "maskText1",
     nextId: "animText1",
-  },
-  {
-    heading: "Interactive tabs/navigation buttons",
-    id: "tabs1",
-    file: <AnimatedTabs />,
-    code: null,
-    article: null,
-    backId: "animText2",
-    nextId: "null",
   },
 ];
 
