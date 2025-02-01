@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const FeatureCard = ({feature}) => {
   return (
     <div className="w-full p-4 rounded-lg shadow-app-300 shadow-[0_0_5px_0] flex flex-col gap-2.5">
-      <h3 className="text-white font-semibold text-xl">{feature?.heading}</h3>
+      <h3 className="text-white font-semibold font-serif text-lg">{feature?.heading}</h3>
       {feature?.imgSrc && (
         <img
           src={"/src/assets/demoCuts/" + feature.imgSrc}
@@ -33,7 +33,9 @@ const FeatureCard = ({feature}) => {
         <Link to={"/component/" + feature?.path}>
           <button
             type="button"
-            className="w-auto py-1 px-3 rounded-xl border border-focus-50 text-sm font-semibold text-focus-50 flex items-center gap-2 hover:border-focus-600 group"
+            className="w-auto py-1 px-3 rounded-xl border border-focus-50 text-sm font-semibold text-focus-50 flex items-center gap-2 
+            hover:border-focus-600 hover:shadow-[0_0_9px_1px] hover:shadow-focus-600
+            group"
           >
             Open
             <svg

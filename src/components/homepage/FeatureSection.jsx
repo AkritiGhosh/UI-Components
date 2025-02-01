@@ -22,7 +22,7 @@ const FeatureSection = () => {
               {featureGroup?.heading}
             </h2>
             <ResponsiveMasonry
-              columnsCountBreakPoints={{ 300: 1, 500: 2, 800: 3, 1300: 4 }}
+              columnsCountBreakPoints={{ 300: 1, 500: 2, 800: 3, 1400: 4 }}
             >
               <Masonry gutter="20px">
                 {featureGroup?.content?.map((feature) => (
