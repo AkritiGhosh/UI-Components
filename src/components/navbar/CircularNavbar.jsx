@@ -84,11 +84,9 @@ const CircularNavbar = () => {
     <div className="size-20 flex items-center justify-center relative">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className={`absolute z-10 size-20 text-sm text-app-800 font-bold p-2 rounded-full bg-white border-2 ${
-          open
-            ? "border-app-800"
-            : "border-app-500 text-app-500 "
-        } flex items-center justify-center hover:shadow-md hover:shadow-app-200`}
+        className={`absolute z-10 size-20 text-sm text-app-800 font-bold p-2 rounded-full bg-white dark:bg-black border-2 ${
+          open ? "border-app-800" : "border-app-500 text-app-500 "
+        } flex items-center justify-center hover:shadow-md hover:shadow-app-200 dark:hover:shadow-app-900`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +108,7 @@ const CircularNavbar = () => {
       {nav?.map((navItem, i) => (
         <button
           style={{ transitionDelay: (i + 1) * 100 + "ms" }}
-          className={`absolute size-20 text-sm text-app-800 font-bold p-2 rounded-full bg-white border-2 border-app-800 flex items-center justify-center inset-0 transition-transform duration-200 ${
+          className={`absolute size-20 text-sm text-app-800 hover:text-focus-700 font-bold p-2 rounded-full bg-white dark:bg-black border-2 border-app-800 hover:border-focus-600 flex items-center justify-center inset-0 transition-transform duration-200 ${
             open ? navItem?.class : ""
           }`}
         >
